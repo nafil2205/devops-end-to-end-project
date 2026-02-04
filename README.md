@@ -39,29 +39,30 @@ security group was configured to allow SSH (port 22) and HTTP
 The EC2 instance was accessed securely using SSH and a PEM key file,
 confirming successful connectivity to the server.
 
-![EC2 Instance Running](screenshots/Screenshot_day-2_Devops_Project_EC2_instance_Running.png)
+![EC2 Instance Running](screenshots\Screenshot_day-2_Devops_Project_EC2_Instance_Running.png)
 
 ### Apache Web Server Installation
 Apache HTTP Server was installed, started, and enabled to run on
 system startup.
 
-bash
+```bash
 sudo yum install httpd -y
 sudo systemctl start httpd
 sudo systemctl enable httpd
-
+```
 
 ### Service Validation
 The Apache service status was verified, and it was confirmed that the
 server was listening on port 80.
 
+```
 bash
 sudo systemctl status httpd
 sudo netstat -tulnp | grep 80
-
+```
 
 ### Web Access Verification
 The Apache default test page was accessed successfully using the EC2
 public IP address through a web browser.
 
-![Apache Web Page](screenshots/Screenshot_day2_apache_works.png)
+![Apache Web Page](screenshots\Screenshot_day2_apache_works.png.png)

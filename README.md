@@ -60,7 +60,7 @@ Ensured all work was done inside the Git repository directory containing the .gi
 Verified file tracking using git status, ls -a, and pwd.
 This helped reinforce proper Git repository structure and version control best practices.
 
-![Git file created](screenshots\day1_git_files.png)
+![Git file created](screenshots/day1_git_files.png)
 
 ## Day 2 – AWS EC2 and Apache Web Server Setup
 Objective
@@ -90,6 +90,6 @@ bash sudo systemctl status httpd sudo netstat -tulnp | grep 80
 Web Access Verification
 The Apache default test page was accessed successfully using the EC2 public IP address through a web browser.
 
-![Apache web running page](screenshots\day2_apache_running.jpeg)
+![Apache web running page](screenshots/day2_apache_running.jpeg)
 
 ![Apache Web Page](screenshots/day2_apache_working.png)
